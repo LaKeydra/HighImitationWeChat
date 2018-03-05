@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8758A8F20491DF50090DD3A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8758A8E20491DF50090DD3A /* AppDelegate.m */; };
+		A8758A9220491DF50090DD3A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8758A9120491DF50090DD3A /* ViewController.m */; };
+		A8758A9520491DF50090DD3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8758A9320491DF50090DD3A /* Main.storyboard */; };
+		A8758A9720491DF50090DD3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8758A9620491DF50090DD3A /* Assets.xcassets */; };
+		A8758A9D20491DF50090DD3A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8758A9C20491DF50090DD3A /* main.m */; };
+		A8A13EA2204CE14500B96559 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A13EA1204CE14400B96559 /* LaunchScreen.storyboard */; };
+		A8A13EA5204CE76500B96559 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A13EA4204CE76500B96559 /* Login.storyboard */; };
+		A8A13EA8204CE78100B96559 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A13EA7204CE78100B96559 /* LoginViewController.m */; };
+		A8A13EAC204CF02600B96559 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8A13EAB204CF02600B96559 /* Register.storyboard */; };
+		A8A13EAF204CF03300B96559 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A13EAE204CF03300B96559 /* RegisterViewController.m */; };
+		A8A13EB4204CF2C800B96559 /* RegisterCountryTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A13EB3204CF2C800B96559 /* RegisterCountryTVCell.xib */; };
+		A8A13EB6204CF3FA00B96559 /* RegisterPhoneNumTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A13EB5204CF3FA00B96559 /* RegisterPhoneNumTVCell.xib */; };
+		A8A13EB9204D0B9600B96559 /* RegisterCountryTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A13EB8204D0B9600B96559 /* RegisterCountryTVCell.m */; };
+		A8A13EBC204D0BAA00B96559 /* RegisterPhoneNumTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A13EBB204D0BAA00B96559 /* RegisterPhoneNumTVCell.m */; };
+		A8A13EBE204D11FA00B96559 /* RegisterBtnTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A13EBD204D11FA00B96559 /* RegisterBtnTVCell.xib */; };
+		A8A13EC1204D120E00B96559 /* RegisterBtnTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A13EC0204D120E00B96559 /* RegisterBtnTVCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A8758A8A20491DF50090DD3A /* HighImitationWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HighImitationWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8758A8D20491DF50090DD3A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A8758A8E20491DF50090DD3A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A8758A9020491DF50090DD3A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A8758A9120491DF50090DD3A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A8758A9420491DF50090DD3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A8758A9620491DF50090DD3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A8758A9B20491DF50090DD3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8758A9C20491DF50090DD3A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A8A13EA1204CE14400B96559 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A8A13EA4204CE76500B96559 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		A8A13EA6204CE78100B96559 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A8A13EA7204CE78100B96559 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A8A13EAB204CF02600B96559 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		A8A13EAD204CF03300B96559 /* RegisterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		A8A13EAE204CF03300B96559 /* RegisterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		A8A13EB3204CF2C800B96559 /* RegisterCountryTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterCountryTVCell.xib; sourceTree = "<group>"; };
+		A8A13EB5204CF3FA00B96559 /* RegisterPhoneNumTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterPhoneNumTVCell.xib; sourceTree = "<group>"; };
+		A8A13EB7204D0B9600B96559 /* RegisterCountryTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterCountryTVCell.h; sourceTree = "<group>"; };
+		A8A13EB8204D0B9600B96559 /* RegisterCountryTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterCountryTVCell.m; sourceTree = "<group>"; };
+		A8A13EBA204D0BAA00B96559 /* RegisterPhoneNumTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterPhoneNumTVCell.h; sourceTree = "<group>"; };
+		A8A13EBB204D0BAA00B96559 /* RegisterPhoneNumTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterPhoneNumTVCell.m; sourceTree = "<group>"; };
+		A8A13EBD204D11FA00B96559 /* RegisterBtnTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterBtnTVCell.xib; sourceTree = "<group>"; };
+		A8A13EBF204D120E00B96559 /* RegisterBtnTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterBtnTVCell.h; sourceTree = "<group>"; };
+		A8A13EC0204D120E00B96559 /* RegisterBtnTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterBtnTVCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A8758A8720491DF50090DD3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A8758A8120491DF50090DD3A = {
+			isa = PBXGroup;
+			children = (
+				A8758A8C20491DF50090DD3A /* HighImitationWeChat */,
+			);
+			sourceTree = "<group>";
+		};
+		A8758A8B20491DF50090DD3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8758A8A20491DF50090DD3A /* HighImitationWeChat.app */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A8758A8C20491DF50090DD3A /* HighImitationWeChat */ = {
+			isa = PBXGroup;
+			children = (
+				A8A13EB1204CF24D00B96559 /* ViewParts */,
+				A8A13EB0204CF20F00B96559 /* Screens */,
+				A8758A8D20491DF50090DD3A /* AppDelegate.h */,
+				A8758A8E20491DF50090DD3A /* AppDelegate.m */,
+				A8758A9020491DF50090DD3A /* ViewController.h */,
+				A8758A9120491DF50090DD3A /* ViewController.m */,
+				A8758A9320491DF50090DD3A /* Main.storyboard */,
+				A8758A9620491DF50090DD3A /* Assets.xcassets */,
+				A8758A8B20491DF50090DD3A /* Products */,
+				A8758A9B20491DF50090DD3A /* Info.plist */,
+				A8A13EA1204CE14400B96559 /* LaunchScreen.storyboard */,
+				A8758A9C20491DF50090DD3A /* main.m */,
+			);
+			path = HighImitationWeChat;
+			sourceTree = "<group>";
+		};
+		A8A13EA3204CE74D00B96559 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A8A13EA4204CE76500B96559 /* Login.storyboard */,
+				A8A13EA6204CE78100B96559 /* LoginViewController.h */,
+				A8A13EA7204CE78100B96559 /* LoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A8A13EA9204CEEA500B96559 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				A8A13EAB204CF02600B96559 /* Register.storyboard */,
+				A8A13EAD204CF03300B96559 /* RegisterViewController.h */,
+				A8A13EAE204CF03300B96559 /* RegisterViewController.m */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		A8A13EB0204CF20F00B96559 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A8A13EA9204CEEA500B96559 /* Register */,
+				A8A13EA3204CE74D00B96559 /* Login */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A8A13EB1204CF24D00B96559 /* ViewParts */ = {
+			isa = PBXGroup;
+			children = (
+				A8A13EB2204CF25F00B96559 /* TableViewCell */,
+			);
+			path = ViewParts;
+			sourceTree = "<group>";
+		};
+		A8A13EB2204CF25F00B96559 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				A8A13EB3204CF2C800B96559 /* RegisterCountryTVCell.xib */,
+				A8A13EB7204D0B9600B96559 /* RegisterCountryTVCell.h */,
+				A8A13EB8204D0B9600B96559 /* RegisterCountryTVCell.m */,
+				A8A13EB5204CF3FA00B96559 /* RegisterPhoneNumTVCell.xib */,
+				A8A13EBA204D0BAA00B96559 /* RegisterPhoneNumTVCell.h */,
+				A8A13EBB204D0BAA00B96559 /* RegisterPhoneNumTVCell.m */,
+				A8A13EBD204D11FA00B96559 /* RegisterBtnTVCell.xib */,
+				A8A13EBF204D120E00B96559 /* RegisterBtnTVCell.h */,
+				A8A13EC0204D120E00B96559 /* RegisterBtnTVCell.m */,
+			);
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A8758A8920491DF50090DD3A /* HighImitationWeChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A8758AA020491DF50090DD3A /* Build configuration list for PBXNativeTarget "HighImitationWeChat" */;
+			buildPhases = (
+				A8758A8620491DF50090DD3A /* Sources */,
+				A8758A8720491DF50090DD3A /* Frameworks */,
+				A8758A8820491DF50090DD3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HighImitationWeChat;
+			productName = HighImitationWeChat;
+			productReference = A8758A8A20491DF50090DD3A /* HighImitationWeChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A8758A8220491DF50090DD3A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = zl;
+				TargetAttributes = {
+					A8758A8920491DF50090DD3A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A8758A8520491DF50090DD3A /* Build configuration list for PBXProject "HighImitationWeChat" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A8758A8120491DF50090DD3A;
+			productRefGroup = A8758A8B20491DF50090DD3A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A8758A8920491DF50090DD3A /* HighImitationWeChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A8758A8820491DF50090DD3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8A13EA5204CE76500B96559 /* Login.storyboard in Resources */,
+				A8A13EBE204D11FA00B96559 /* RegisterBtnTVCell.xib in Resources */,
+				A8A13EA2204CE14500B96559 /* LaunchScreen.storyboard in Resources */,
+				A8758A9720491DF50090DD3A /* Assets.xcassets in Resources */,
+				A8758A9520491DF50090DD3A /* Main.storyboard in Resources */,
+				A8A13EAC204CF02600B96559 /* Register.storyboard in Resources */,
+				A8A13EB4204CF2C800B96559 /* RegisterCountryTVCell.xib in Resources */,
+				A8A13EB6204CF3FA00B96559 /* RegisterPhoneNumTVCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A8758A8620491DF50090DD3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8A13EAF204CF03300B96559 /* RegisterViewController.m in Sources */,
+				A8A13EC1204D120E00B96559 /* RegisterBtnTVCell.m in Sources */,
+				A8A13EB9204D0B9600B96559 /* RegisterCountryTVCell.m in Sources */,
+				A8A13EBC204D0BAA00B96559 /* RegisterPhoneNumTVCell.m in Sources */,
+				A8A13EA8204CE78100B96559 /* LoginViewController.m in Sources */,
+				A8758A9220491DF50090DD3A /* ViewController.m in Sources */,
+				A8758A9D20491DF50090DD3A /* main.m in Sources */,
+				A8758A8F20491DF50090DD3A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A8758A9320491DF50090DD3A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A8758A9420491DF50090DD3A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A8758A9E20491DF50090DD3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A8758A9F20491DF50090DD3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A8758AA120491DF50090DD3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YDR7T8879;
+				INFOPLIST_FILE = HighImitationWeChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zl.HighImitationWeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A8758AA220491DF50090DD3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3YDR7T8879;
+				INFOPLIST_FILE = HighImitationWeChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = zl.HighImitationWeChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A8758A8520491DF50090DD3A /* Build configuration list for PBXProject "HighImitationWeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8758A9E20491DF50090DD3A /* Debug */,
+				A8758A9F20491DF50090DD3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A8758AA020491DF50090DD3A /* Build configuration list for PBXNativeTarget "HighImitationWeChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A8758AA120491DF50090DD3A /* Debug */,
+				A8758AA220491DF50090DD3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A8758A8220491DF50090DD3A /* Project object */;
+}

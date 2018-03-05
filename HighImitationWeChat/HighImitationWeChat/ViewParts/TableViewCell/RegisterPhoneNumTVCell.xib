@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RegisterPhoneNumTVCell" id="km2-Ue-j4Q" customClass="RegisterPhoneNumTVCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="km2-Ue-j4Q" id="mL4-hZ-QF8">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khf-TG-tCM">
+                        <rect key="frame" x="60" y="0.0" width="1" height="43.5"/>
+                        <color key="backgroundColor" red="0.87058823529411766" green="0.87058823529411766" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="K62-pW-eeM"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+86" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5co-vm-Ofc">
+                        <rect key="frame" x="16" y="0.0" width="44" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.22352941176470587" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请填写手机号码" textAlignment="natural" minimumFontSize="16" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dum-gk-wOG">
+                        <rect key="frame" x="77" y="0.0" width="298" height="43.5"/>
+                        <color key="textColor" red="0.22352941176470587" green="0.22352941176470587" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5co-vm-Ofc" firstAttribute="top" secondItem="mL4-hZ-QF8" secondAttribute="top" id="5Ot-RL-zzm"/>
+                    <constraint firstItem="Khf-TG-tCM" firstAttribute="leading" secondItem="5co-vm-Ofc" secondAttribute="trailing" id="7Ku-Xi-Ozy"/>
+                    <constraint firstAttribute="bottom" secondItem="Khf-TG-tCM" secondAttribute="bottom" id="DVs-oO-Pdo"/>
+                    <constraint firstAttribute="trailing" secondItem="dum-gk-wOG" secondAttribute="trailing" id="OdF-m4-bqD"/>
+                    <constraint firstItem="Khf-TG-tCM" firstAttribute="leading" secondItem="mL4-hZ-QF8" secondAttribute="leading" constant="60" id="Ops-nr-b1q"/>
+                    <constraint firstAttribute="bottom" secondItem="dum-gk-wOG" secondAttribute="bottom" id="RqW-hR-lyN"/>
+                    <constraint firstAttribute="bottom" secondItem="5co-vm-Ofc" secondAttribute="bottom" id="Udp-1r-HUJ"/>
+                    <constraint firstItem="dum-gk-wOG" firstAttribute="top" secondItem="mL4-hZ-QF8" secondAttribute="top" id="f6u-KH-bhB"/>
+                    <constraint firstItem="5co-vm-Ofc" firstAttribute="leading" secondItem="mL4-hZ-QF8" secondAttribute="leading" constant="16" id="fzR-0f-hLf"/>
+                    <constraint firstItem="dum-gk-wOG" firstAttribute="leading" secondItem="Khf-TG-tCM" secondAttribute="trailing" constant="16" id="kaS-4Y-8Zi"/>
+                    <constraint firstItem="Khf-TG-tCM" firstAttribute="top" secondItem="mL4-hZ-QF8" secondAttribute="top" id="wrH-Vz-9a4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-45" y="9"/>
+        </tableViewCell>
+    </objects>
+</document>
