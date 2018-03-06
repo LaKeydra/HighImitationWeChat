@@ -23,6 +23,10 @@
 		A8A13EBC204D0BAA00B96559 /* RegisterPhoneNumTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A13EBB204D0BAA00B96559 /* RegisterPhoneNumTVCell.m */; };
 		A8A13EBE204D11FA00B96559 /* RegisterBtnTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8A13EBD204D11FA00B96559 /* RegisterBtnTVCell.xib */; };
 		A8A13EC1204D120E00B96559 /* RegisterBtnTVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A13EC0204D120E00B96559 /* RegisterBtnTVCell.m */; };
+		A8D7799D204E280600C4F694 /* diallingcode.json in Resources */ = {isa = PBXBuildFile; fileRef = A8D7799C204E280600C4F694 /* diallingcode.json */; };
+		A8D779A0204E28C700C4F694 /* DiallingCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8D7799F204E28C700C4F694 /* DiallingCode.storyboard */; };
+		A8D779A3204E2A0E00C4F694 /* DiallingCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D779A2204E2A0E00C4F694 /* DiallingCodeViewController.m */; };
+		A8D779A6204E2CD400C4F694 /* CountryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D779A5204E2CD400C4F694 /* CountryModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,12 @@
 		A8A13EBD204D11FA00B96559 /* RegisterBtnTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterBtnTVCell.xib; sourceTree = "<group>"; };
 		A8A13EBF204D120E00B96559 /* RegisterBtnTVCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterBtnTVCell.h; sourceTree = "<group>"; };
 		A8A13EC0204D120E00B96559 /* RegisterBtnTVCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterBtnTVCell.m; sourceTree = "<group>"; };
+		A8D7799C204E280600C4F694 /* diallingcode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = diallingcode.json; sourceTree = "<group>"; };
+		A8D7799F204E28C700C4F694 /* DiallingCode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DiallingCode.storyboard; sourceTree = "<group>"; };
+		A8D779A1204E2A0E00C4F694 /* DiallingCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiallingCodeViewController.h; sourceTree = "<group>"; };
+		A8D779A2204E2A0E00C4F694 /* DiallingCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiallingCodeViewController.m; sourceTree = "<group>"; };
+		A8D779A4204E2CD400C4F694 /* CountryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountryModel.h; sourceTree = "<group>"; };
+		A8D779A5204E2CD400C4F694 /* CountryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountryModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +95,7 @@
 			children = (
 				A8A13EB1204CF24D00B96559 /* ViewParts */,
 				A8A13EB0204CF20F00B96559 /* Screens */,
+				A8D7799B204E27EA00C4F694 /* Resources */,
 				A8758A8D20491DF50090DD3A /* AppDelegate.h */,
 				A8758A8E20491DF50090DD3A /* AppDelegate.m */,
 				A8758A9020491DF50090DD3A /* ViewController.h */,
@@ -122,6 +133,7 @@
 		A8A13EB0204CF20F00B96559 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				A8D7799E204E289D00C4F694 /* DiallingCode */,
 				A8A13EA9204CEEA500B96559 /* Register */,
 				A8A13EA3204CE74D00B96559 /* Login */,
 			);
@@ -150,6 +162,26 @@
 				A8A13EC0204D120E00B96559 /* RegisterBtnTVCell.m */,
 			);
 			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		A8D7799B204E27EA00C4F694 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8D7799C204E280600C4F694 /* diallingcode.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A8D7799E204E289D00C4F694 /* DiallingCode */ = {
+			isa = PBXGroup;
+			children = (
+				A8D7799F204E28C700C4F694 /* DiallingCode.storyboard */,
+				A8D779A1204E2A0E00C4F694 /* DiallingCodeViewController.h */,
+				A8D779A2204E2A0E00C4F694 /* DiallingCodeViewController.m */,
+				A8D779A4204E2CD400C4F694 /* CountryModel.h */,
+				A8D779A5204E2CD400C4F694 /* CountryModel.m */,
+			);
+			path = DiallingCode;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,8 +245,10 @@
 				A8A13EA5204CE76500B96559 /* Login.storyboard in Resources */,
 				A8A13EBE204D11FA00B96559 /* RegisterBtnTVCell.xib in Resources */,
 				A8A13EA2204CE14500B96559 /* LaunchScreen.storyboard in Resources */,
+				A8D779A0204E28C700C4F694 /* DiallingCode.storyboard in Resources */,
 				A8758A9720491DF50090DD3A /* Assets.xcassets in Resources */,
 				A8758A9520491DF50090DD3A /* Main.storyboard in Resources */,
+				A8D7799D204E280600C4F694 /* diallingcode.json in Resources */,
 				A8A13EAC204CF02600B96559 /* Register.storyboard in Resources */,
 				A8A13EB4204CF2C800B96559 /* RegisterCountryTVCell.xib in Resources */,
 				A8A13EB6204CF3FA00B96559 /* RegisterPhoneNumTVCell.xib in Resources */,
@@ -230,7 +264,9 @@
 			files = (
 				A8A13EAF204CF03300B96559 /* RegisterViewController.m in Sources */,
 				A8A13EC1204D120E00B96559 /* RegisterBtnTVCell.m in Sources */,
+				A8D779A6204E2CD400C4F694 /* CountryModel.m in Sources */,
 				A8A13EB9204D0B9600B96559 /* RegisterCountryTVCell.m in Sources */,
+				A8D779A3204E2A0E00C4F694 /* DiallingCodeViewController.m in Sources */,
 				A8A13EBC204D0BAA00B96559 /* RegisterPhoneNumTVCell.m in Sources */,
 				A8A13EA8204CE78100B96559 /* LoginViewController.m in Sources */,
 				A8758A9220491DF50090DD3A /* ViewController.m in Sources */,

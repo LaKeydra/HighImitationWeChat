@@ -26,7 +26,8 @@
     [_registerTableView registerNib:[UINib nibWithNibName:@"RegisterBtnTVCell" bundle:nil] forCellReuseIdentifier:@"RegisterBtnTVCell"];
     _registerTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
-    
+    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyBoardGesture)];
+    [self.view addGestureRecognizer:gesture];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,6 +38,11 @@
 - (IBAction)cancelAction:(id)sender {
     [self dismissViewControllerAnimated:true completion:nil];
 }
+
+- (void)closeKeyBoardGesture {
+    [[[UIApplication sharedApplication] keyWindow] endEditing:YES];
+}
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
