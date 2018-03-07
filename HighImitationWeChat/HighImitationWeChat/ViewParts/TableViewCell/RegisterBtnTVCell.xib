@@ -40,6 +40,9 @@
                     <constraint firstItem="Y0a-uX-nAD" firstAttribute="centerY" secondItem="goW-it-0Cy" secondAttribute="centerY" id="wa4-qa-Y18"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="registerBtn" destination="Y0a-uX-nAD" id="InL-XY-cqf"/>
+            </connections>
             <point key="canvasLocation" x="-9" y="-0.5"/>
         </tableViewCell>
     </objects>

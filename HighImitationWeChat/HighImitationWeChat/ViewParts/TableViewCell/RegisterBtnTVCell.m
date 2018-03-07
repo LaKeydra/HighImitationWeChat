@@ -8,11 +8,20 @@
 
 #import "RegisterBtnTVCell.h"
 
+@interface RegisterBtnTVCell()
+
+@property (weak, nonatomic) IBOutlet UIButton *registerBtn;
+
+@end
+
 @implementation RegisterBtnTVCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    [self.registerBtn.rac_command.executionSignals subscribeNext:^(id x) {
+        
+    }];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

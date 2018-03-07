@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface RegisterViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 

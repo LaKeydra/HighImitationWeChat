@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CountryModel.h"
 
-@interface DiallingCodeViewController : UIViewController
+@interface DiallingCodeViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic, copy) void(^doneBlock)(CountryModel* country);
 
 @end

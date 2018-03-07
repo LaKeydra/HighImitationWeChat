@@ -10,4 +10,6 @@
 
 @interface RegisterCountryTVCell : UITableViewCell
 
+- (void)refreshUI: (NSString *)content;
+
 @end

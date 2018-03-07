@@ -74,7 +74,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jX1-UD-AuW" secondAttribute="bottom" constant="30" id="3sJ-Nx-Ba8"/>
                             <constraint firstItem="KhO-dS-iqh" firstAttribute="width" secondItem="jX1-UD-AuW" secondAttribute="width" id="Ffi-b0-dWQ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KhO-dS-iqh" secondAttribute="bottom" constant="30" id="HFe-St-zbE"/>
-                            <constraint firstItem="18k-fT-7fg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="U6W-bi-C3X"/>
+                            <constraint firstItem="18k-fT-7fg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Szf-Lq-mOL"/>
                             <constraint firstItem="jZY-An-Gpu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="30" id="Vf5-wo-bAS"/>
                             <constraint firstItem="18k-fT-7fg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="egV-1z-bjZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="18k-fT-7fg" secondAttribute="bottom" id="k7t-iU-phw"/>
@@ -85,12 +85,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="o03-PR-sNB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-516" y="65"/>
         </scene>
     </scenes>
     <resources>
-        <image name="LaunchImage" width="320" height="480"/>
+        <image name="LaunchImage" width="375" height="666"/>
     </resources>
 </document>

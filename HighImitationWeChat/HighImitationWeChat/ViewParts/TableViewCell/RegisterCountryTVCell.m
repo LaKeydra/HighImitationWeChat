@@ -8,6 +8,12 @@
 
 #import "RegisterCountryTVCell.h"
 
+@interface RegisterCountryTVCell()
+
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+
+@end
+
 @implementation RegisterCountryTVCell
 
 - (void)awakeFromNib {
@@ -19,6 +25,10 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)refreshUI: (NSString *)content{
+    self.contentLabel.text = content;
 }
 
 @end

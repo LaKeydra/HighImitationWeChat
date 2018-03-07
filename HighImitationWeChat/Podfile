@@ -1,0 +1,7 @@
+target 'HighImitationWeChat' do
+use_frameworks!
+platform :ios, '9.0'
+pod 'ReactiveCocoa'
+pod 'ReactiveViewModel'
+pod 'Realm'
+end

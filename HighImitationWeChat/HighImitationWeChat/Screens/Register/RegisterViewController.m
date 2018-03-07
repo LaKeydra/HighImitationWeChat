@@ -10,10 +10,14 @@
 #import "RegisterCountryTVCell.h"
 #import "RegisterPhoneNumTVCell.h"
 #import "RegisterBtnTVCell.h"
+#import "DiallingCodeViewController.h"
+
 
 @interface RegisterViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *registerTableView;
+@property (strong, nonatomic) CountryModel *currentCountry;
+@property (strong, nonatomic) RegisterPhoneNumTVCell *phoneNumTVCell;
 
 @end
 
@@ -26,8 +30,16 @@
     [_registerTableView registerNib:[UINib nibWithNibName:@"RegisterBtnTVCell" bundle:nil] forCellReuseIdentifier:@"RegisterBtnTVCell"];
     _registerTableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
-    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyBoardGesture)];
-    [self.view addGestureRecognizer:gesture];
+    self.currentCountry = [[CountryModel alloc] init];
+    self.currentCountry.name = @"中国";
+    self.currentCountry.dial_code = @"+86";
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
+    tap.cancelsTouchesInView = NO;
+    [[tap rac_gestureSignal] subscribeNext:^(id x) {
+        [[[UIApplication sharedApplication] keyWindow] endEditing:YES];
+    }];
+    [self.view addGestureRecognizer:tap];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,14 +47,9 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)cancelAction:(id)sender {
+- (IBAction)dismissAction:(id)sender {
     [self dismissViewControllerAnimated:true completion:nil];
 }
-
-- (void)closeKeyBoardGesture {
-    [[[UIApplication sharedApplication] keyWindow] endEditing:YES];
-}
-
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -55,13 +62,18 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
         RegisterCountryTVCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RegisterCountryTVCell" forIndexPath:indexPath];
+        [cell refreshUI:self.currentCountry.name];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     } else if (indexPath.row == 1){
-        RegisterPhoneNumTVCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RegisterPhoneNumTVCell" forIndexPath:indexPath];
-        return cell;
+        _phoneNumTVCell = [tableView dequeueReusableCellWithIdentifier:@"RegisterPhoneNumTVCell" forIndexPath:indexPath];
+        [_phoneNumTVCell refreshUI:self.currentCountry.dial_code];
+        _phoneNumTVCell.selectionStyle = UITableViewCellSelectionStyleNone;
+        return _phoneNumTVCell;
     } else {
         RegisterBtnTVCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RegisterBtnTVCell" forIndexPath:indexPath];
         cell.separatorInset = UIEdgeInsetsMake(0, 0, 0, cell.bounds.size.width);
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         return cell;
     }
 }
@@ -71,6 +83,20 @@
         return 80;
     } else {
         return 48;
+    }
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:true];
+    if (indexPath.row == 0) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"DiallingCode" bundle:nil];
+        DiallingCodeViewController *vc = [sb instantiateInitialViewController];
+        vc.doneBlock = ^(CountryModel *country) {
+            self.currentCountry.name = country.name;
+            self.currentCountry.dial_code = country.dial_code;
+            [self.registerTableView reloadData];
+        };
+        [self.navigationController pushViewController:vc animated:true];
     }
 }
 

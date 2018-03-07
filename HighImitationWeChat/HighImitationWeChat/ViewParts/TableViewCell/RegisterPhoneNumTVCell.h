@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 @interface RegisterPhoneNumTVCell : UITableViewCell
+
+- (void)refreshUI: (NSString *)title;
 
 @end
