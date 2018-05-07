@@ -5,4 +5,5 @@ pod 'ReactiveCocoa'
 pod 'ReactiveViewModel'
 pod 'Realm'
 pod 'CocoaLumberjack'
+pod 'CocoaAsyncSocket'
 end

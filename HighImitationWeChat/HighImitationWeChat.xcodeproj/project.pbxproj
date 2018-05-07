@@ -220,7 +220,6 @@
 				A8758A8720491DF50090DD3A /* Frameworks */,
 				A8758A8820491DF50090DD3A /* Resources */,
 				2ABC036805AB9803144E150A /* [CP] Embed Pods Frameworks */,
-				06661EB5D3D66C949DB77838 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,21 +284,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		06661EB5D3D66C949DB77838 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HighImitationWeChat/Pods-HighImitationWeChat-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2ABC036805AB9803144E150A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -307,6 +291,8 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-HighImitationWeChat/Pods-HighImitationWeChat-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveCocoa/ReactiveCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveViewModel/ReactiveViewModel.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
